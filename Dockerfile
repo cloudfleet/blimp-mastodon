@@ -7,9 +7,10 @@ ENV DB_USER=postgres
 ENV DB_NAME=postgres
 ENV DB_PASS=
 ENV DB_PORT=5432
-ENV ES_ENABLED=true
-ENV ES_HOST=mastodonelastic
-ENV ES_PORT=9200
+
+#ENV ES_ENABLED=true
+#ENV ES_HOST=mastodonelastic
+#ENV ES_PORT=9200
 
 ENV SINGLE_USER_MODE=true
 
