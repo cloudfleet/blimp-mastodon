@@ -1,4 +1,4 @@
-FROM tootsuite/mastodon:2.6.5
+FROM tootsuite/mastodon:latest
 
 ENV REDIS_HOST=mastodonredis
 ENV REDIS_PORT=6379
