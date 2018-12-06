@@ -21,4 +21,4 @@ ENV SMTP_PASSWORD=
 
 COPY entrypoint.sh /
 
-ENTRYPOINT /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
