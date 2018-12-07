@@ -19,6 +19,8 @@ ENV SMTP_PORT=587
 ENV SMTP_LOGIN=
 ENV SMTP_PASSWORD=
 
-COPY entrypoint.sh /
+COPY entrypoint*.sh /
 
-ENTRYPOINT ["/entrypoint.sh"]
+USER root
+
+ENTRYPOINT ["/sbin/tini", "--", "/entrypoint-root.sh"]
